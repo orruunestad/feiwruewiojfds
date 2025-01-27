@@ -1,6 +1,15 @@
 loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/orruunestad/refs/heads/main/DuckieHUBWhitelist")()
 
-loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/feiwruewiojfds/refs/heads/main/ireuwqrieowqyru")()
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Thank You!";
+	Text = "Duckie Hub thanks you for supporting us!";
+	Duration = 20;
+	Button1 = "Dismiss";
+	Callback = NotificationBindable;
+})
 
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")

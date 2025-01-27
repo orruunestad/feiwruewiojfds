@@ -57,4 +57,4 @@ local script3 = "loadstring(game:HttpGet('link'))()"
 
 createButton("Movement", script1)
 createButton("Extra Characters", script2)
-createButton("Button", script3)
+createButton("Button 3", script3)

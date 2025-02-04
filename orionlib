@@ -1712,7 +1712,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	
 	OrionLib:MakeNotification({
 		Name = "Duckie Hub",
-		Content = "Made by oven",
+		Content = "Made by oven, UI from Orion Lib",
 		Time = 5
 	})
 	

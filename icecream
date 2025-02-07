@@ -1,1 +1,1 @@
-local icecream = true
+getgenv().icecream = true
